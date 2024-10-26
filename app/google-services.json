@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422866453064",
+    "firebase_url": "https://psychika-f3c67-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "psychika-f3c67",
+    "storage_bucket": "psychika-f3c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422866453064:android:e24291be233323403a8e7d",
+        "android_client_info": {
+          "package_name": "com.example.psychika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422866453064-b6h5s3evaa7v6ptused7v9hpefvuc95q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.psychika",
+            "certificate_hash": "fe5a07fe8838ded5681d7c3cfcb28e5fc7a03f4e"
+          }
+        },
+        {
+          "client_id": "422866453064-f60vsdil6hdr6ftsm2c9srvgtivjdh5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKLoRxdQv5svDtATqXtMOzQYK8QbpNdTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422866453064-f60vsdil6hdr6ftsm2c9srvgtivjdh5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

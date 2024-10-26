@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral -->
+    <color name="neutral_50">#F8FAFC</color>
+    <color name="neutral_100">#F1F5F9</color>
+    <color name="neutral_200">#E2E8F0</color>
+    <color name="neutral_300">#CBD5E1</color>
+    <color name="neutral_400">#94A3B8</color>
+    <color name="neutral_500">#64748B</color>
+    <color name="neutral_600">#475569</color>
+    <color name="neutral_700">#334155</color>
+    <color name="neutral_800">#1E293B</color>
+    <color name="neutral_900">#0F172A</color>
+
+    <!-- Primary -->
+    <color name="primary_50">#E3F2FD</color>
+    <color name="primary_100">#BBDEFB</color>
+    <color name="primary_200">#90CAF9</color>
+    <color name="primary_300">#64B5F6</color>
+    <color name="primary_400">#42A5F5</color>
+    <color name="primary_500">#2196F3</color>
+    <color name="primary_600">#1E88E5</color>
+    <color name="primary_700">#1976D2</color>
+    <color name="primary_800">#1565C0</color>
+    <color name="primary_900">#0D47A1</color>
+    
+    <!-- Secondary -->
+    <color name="secondary_50">#FDECEE</color>
+    <color name="secondary_300">#FCC9CC</color>
+    <color name="secondary_500">#F99399</color>
+    <color name="secondary_700">#F8787F</color>
+    <color name="secondary_900">#C66066</color>
+
+    <!-- Success -->
+    <color name="success_50">#A8EE87</color>
+    <color name="success_300">#87E75A</color>
+    <color name="success_500">#67E12D</color>
+    <color name="success_700">#50C01B</color>
+    <color name="sucess_900">#3D9315</color>
+    
+    <!-- Warning -->
+    <color name="warning_50">#FFF8E2</color>
+    <color name="warning_300">#FAE39F</color>
+    <color name="warning_500">#F4CA64</color>
+    <color name="warning_700">#CBA43D</color>
+    <color name="warning_900">#8C6C1F</color>
+
+    <!-- Error -->
+    <color name="error_50">#FBCDCD</color>
+    <color name="error_300">#F99B9D</color>
+    <color name="error_500">#D92121</color>
+    <color name="error_700">#B32A2A</color>
+    <color name="error_900">#781C1C</color>
+
+    <!-- Shades -->
+    <color name="shades_50">#FFFFFF</color>
+    <color name="shades_100">#252525</color>
+</resources>

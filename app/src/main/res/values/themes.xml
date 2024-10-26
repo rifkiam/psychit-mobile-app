@@ -1,0 +1,276 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Psychika" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_700</item>
+    </style>
+
+    <style name="Theme.Psychika" parent="Base.Theme.Psychika" />
+
+    <!-- Display 2Xl -->
+    <style name="TextAppearance.AppCompat.Display2Xl">
+        <item name="android:textSize">72sp</item>
+        <item name="android:layout_height">90dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Display2Xl.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Display2Xl.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Display2Xl.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Display2Xl.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Display Xl -->
+    <style name="TextAppearance.AppCompat.DisplayXl">
+        <item name="android:textSize">60sp</item>
+        <item name="android:layout_height">72dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXl.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXl.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXl.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXl.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Display Lg -->
+    <style name="TextAppearance.AppCompat.DisplayLg">
+        <item name="android:textSize">48sp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayLg.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayLg.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayLg.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayLg.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Display Md -->
+    <style name="TextAppearance.AppCompat.DisplayMd">
+        <item name="android:textSize">36sp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayMd.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayMd.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayMd.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayMd.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Display Sm -->
+    <style name="TextAppearance.AppCompat.DisplaySm">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">38dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplaySm.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplaySm.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplaySm.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplaySm.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Display Xs -->
+    <style name="TextAppearance.AppCompat.DisplayXs">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXs.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXs.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXs.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.DisplayXs.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Xl -->
+    <style name="TextAppearance.AppCompat.TextXl">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXl.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXl.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXl.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXl.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Lg -->
+    <style name="TextAppearance.AppCompat.TextLg">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextLg.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextLg.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextLg.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextLg.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Md -->
+    <style name="TextAppearance.AppCompat.TextMd">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextMd.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextMd.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextMd.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextMd.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Sm -->
+    <style name="TextAppearance.AppCompat.TextSm">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextSm.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextSm.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextSm.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextSm.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Xs -->
+    <style name="TextAppearance.AppCompat.TextXs">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXs.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXs.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXs.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXs.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <!-- Text Xxs -->
+    <style name="TextAppearance.AppCompat.TextXxs">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXxs.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXxs.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXxs.Semibold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.TextXxs.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <declare-styleable name="IconEditText">
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+</resources>

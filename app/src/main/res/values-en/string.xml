@@ -1,0 +1,327 @@
+<resources>
+    <string name="press_back_again">Press back again to exit</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="illust_login">Login Illustration</string>
+    <string name="login_hello">Hello there, login to continue</string>
+    <string name="email">Email</string>
+    <string name="invalid_email">Use email format</string>
+    <string name="password">Password</string>
+    <string name="invalid_password">Password must not be less than 8 characters</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="divider">Divider</string>
+    <string name="or">or</string>
+    <string name="login_google">Login with Google</string>
+    <string name="login_failed">Login failed</string>
+    <string name="dont_have_acc">Don\'t have an account yet?</string>
+    <string name="empty_form">Please fill in the form fields</string>
+    <string name="invalid_form">Please fill in the form data according to the requirements</string>
+    <string name="no_user">Account not registered yet. Please register first.</string>
+    <string name="invalid_input_user">Invalid email or password. Please try again.</string>
+    <string name="try_login">Register Success! Please try to login to your account</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up">Sign Up</string>
+    <string name="illust_signup">Sign Up Illustration</string>
+    <string name="signup_create">Create an account to continue</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="already_acc">Already have an account?</string>
+    <string name="pass_not_match">Passwords do not match</string>
+    <string name="email_registered">The email is already registered. Please use another email.</string>
+    <string name="signup_success">Sign Up Success! Please try to login to your account</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="illust_forgot_pass">Forgot Password Illustration</string>
+    <string name="enter_email">Enter your email to continue</string>
+    <string name="send">Send</string>
+    <string name="remember_pass">Remember your password?</string>
+    <string name="confirm_send">A reset password email is being sent to %s</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="hi_user">Hi, %s</string>
+    <string name="ready_practice">Ready to practice mindfulness today?</string>
+    <string name="illust_face">Face Illustration</string>
+    <string name="question_feel">How do you feel?</string>
+    <string name="recent_article">Recent Article</string>
+    <string name="cant_get_user_data_google">Unable to retrieve user data</string>
+    <string name="session_expired">Your session has expired. Please log in again to continue.</string>
+
+    <string-array name="feel_desc">
+        <item>Angry</item>
+        <item>Badly</item>
+        <item>Fine</item>
+        <item>Well</item>
+    </string-array>
+
+    <!-- Chat -->
+    <string name="chat">Chat</string>
+    <string name="chatbot">Chatbot</string>
+    <string name="greeting_message">Hi, how is your day?</string>
+    <string name="icon_send_message">Icon Send Message</string>
+    <string name="white_container">White Container</string>
+    <string name="hint_message">Type your message</string>
+    <string name="chat_timeout">Error: Psychika busyer.</string>
+
+    <!-- Article -->
+    <string name="article">Article</string>
+    <string name="search">Search</string>
+    <string name="leaf_background">Leaf Background</string>
+    <string name="photo_article">Article Photo</string>
+    <string name="title_article">Study Finds Nature Walks Boost Mental Well-being</string>
+    <string name="no_article_found">No article found</string>
+
+    <string-array name="article_publisher_profile_pic">
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+        <item>@drawable/profile_avatar</item>
+    </string-array>
+
+    <string-array name="article_publisher">
+        <item>Muhammad Iqbal Fuadi</item>
+        <item>ANTARA</item>
+        <item>Ayu Rifka Sitoresmi</item>
+        <item>Fitriyani Puspa Samodra</item>
+        <item>Febyana Putri</item>
+        <item>Fitriyani Puspa Samodra</item>
+        <item>Fitriyani Puspa Samodra</item>
+        <item>Nesa Ayunda</item>
+        <item>Administrator</item>
+        <item>Kompas Indonesia</item>
+        <item>R Adinda</item>
+    </string-array>
+
+    <string-array name="article_title">
+        <item>Pentingnya Kesehatan Mental Pada Mahasiswa</item>
+        <item>Kegiatan Berbasis Alam Dapat Meningkatkan Kesehatan Mental Siswa</item>
+        <item>Kapan Harus ke Psikiater? Kenali Tanda-tanda Seseorang Perlu Konsultasi</item>
+        <item>Kenapa Berdamai dengan Diri Sendiri Penting? Simak Penjelasan dan Caranya</item>
+        <item>Pengaruh Sosial Media Terhadap Kesehatan Mental Generasi Z</item>
+        <item>Penyebab Rasa Cemas Berlebih, Kenali Jenis dan Cara Mengatasinya</item>
+        <item>Pentingnya Cek Mental Health Rutin, Deteksi Gangguan Sedini Mungkin</item>
+        <item>Apakah Insecure Dapat Memengaruhi Mental Remaja?</item>
+        <item>Menjaga Kesehatan Mental: Tips dan Trik Harian</item>
+        <item>Menjaga Mental Health di Tengah Dinamika Hidup Modern: Pentingnya Health Awareness dan Dukungan Positive Circle</item>
+        <item>Cara Melatih Mental Agar Selalu Kuat</item>
+    </string-array>
+
+    <string-array name="article_date_publish">
+        <item>18 May 2024</item>
+        <item>7 May 2024</item>
+        <item>4 May 2024</item>
+        <item>1 March 2024</item>
+        <item>17 March 2024</item>
+        <item>15 March 2024</item>
+        <item>12 February 2024</item>
+        <item>27 January 2024</item>
+        <item>5 January 2024</item>
+        <item>31 December 2023</item>
+        <item>11 June 2022</item>
+    </string-array>
+
+    <string-array name="article_desc">
+        <item>
+            Mahasiswa adalah seseorang yang menjalani pendidikan tinggi di sebuah perguruan tinggi, kebanyakan dari mereka didominasi oleh remaja yang usianya sekitar 17 ke atas,  pada usia ini juga disebut dengan fase remaja akhir hingga antara umur 20/21. Mahasiswa memiliki beban hidup yang lebih berat dari kehidupan mereka sebelumnya, mereka dibenturkan dengan tugas kuliah yang banyak, masalah asmara, masalah pertemanan,  bulliying, belum lagi harapan orang tua yang tinggi kepada anaknya. Semua permasalahan ini tentu menjadi beban pikiran mahasiswa. Mereka tidak akan dapat belajar dengan tenang dan fokus jika pikiran mereka dipenuhi berbagai macam masalah. Pengaruh media dan norma gender juga dapat memperburuk perbedaan antara realitas kehidupan remaja dan persepsi atau aspirasi mereka untuk masa depan.
+            \n\nMasa remaja merupakan masa transisi dari masa kanak-kanak ke masa dewasa, dan terjadi berbagai  perubahan yang sangat penting baik secara fisik, biologis, mental, emosional, dan  psikososial. Fase ini merupakan fase penting dalam siklus pertumbuhan seseorang yang penuh dengan gejolak akibat perubahan biologis, psikologis, dan sosial. Dalam situasi seperti ini sering timbul konflik internal atau permasalahan yang tidak terselesaikan yang berdampak negatif terhadap perkembangan remaja  di masa depan, terutama pematangan karakter.
+            \n\nTidak sedikit mahasiswa yang memilih mengakhiri hidupnya karena sudah tidak kuat akan tekanan hidup yang mereka alami. Kesehatan mental pada mahasiswa sangat penting dimiliki untuk menunjang perkembangan psikososial mereka, selain itu kondisi sehat jiwa pada kelompok mahasiswa diperlukan untuk menunjang perkembangan keterampilan hidup serta menjadi sumber daya untuk mengatasi masalah yang sedang dihadapi. Kemajuan suatu negara dapat dilihat dari kesejahteraan remajanya, karena remaja adalah investasi sumber daya manusia berharga yang dimiliki sebuah negara. Menurut WHO, kesehatan mental dipahami bukan hanya sebagai tidak adanya penyakit, melainkan dalam arti yang lebih luas, sebagai keadaan sejahtera di mana individu mengembangkan kemampuannya, menghadapi tekanan kehidupan sehari-hari, melakukan pekerjaan yang produktif dan bermanfaat, dan berkontribusi pada perbaikan komunitas mereka.
+            \n\nKesehatan mental sering diremehkan oleh banyak orang, mereka lebih memprioritaskan kesehatan jasmani, padahal kesehatan mental seseorang mempengaruhi kesehatan jasmani. Pemahaman orang orang tentang kesehatan mental juga minim, tidak sedikit mahasiswa yang memiliki problem dalam perilaku sering dikaitkan dengan hal hal mistis sehingga mereka membawanya ke dukun, padahal yang bermasalah adalah kesehatan mentalnya, karena salah penanganan bukanya sembuh mahasiswa yang memiliki problem dalam perilaku malah tambah parah. Oleh karena itu pemahaman tentang kesehatan mental sangat penting dipahami oleh semua orang.
+            \n\nMasalah kesehatan mental yang berkelanjutan bagi mahasiswa dapat dicegah dengan screening. Sreening kesehatan mental pada mahasiswa  perlu dilakukan untuk mengidentifikasi kesehatan mental mahasiswa. Screening ini tentu menjadi tanggung jawab orang sekitar mereka entah dosen, orang tua atau  teman. Cara screening pun sangat sederhana, hanya dengan melihat perilaku mereka seperti, keceriaan, ketenangan, dan perubahan perilaku yang dominan tidak seperti pada umumnya orang seumuran mereka dapat menjadi gejala bahwa kesehatan mental mereka terganggu. Setelah screening dilakukan tugas selanjutnya adalah membawa mahasiswa yang bermasalah mental ke profesional untuk mendapatkan penanganan lebih lanjut. Jika semua orang memikiki empati dan perhatian terhadap sekitarnya, maka akan banyak orang yang mengalami masalah dalam kesehatan mental akan terbantu. Selain itu masalah bunuh diri, kriminalitas yang tinggi dan kemiskinan juga akan berkurang.
+        </item>
+        <item>
+            Jakarta (ANTARA) - Hasil penelitian baru yang dilakukan oleh tim riset dari North Carolina State University menunjukkan bahwa kegiatan sederhana berbasis alam dapat meningkatkan kesehatan mental siswa, mengurangi stres, kecemasan, dan depresi di kalangan remaja.
+            \n\nSiaran Medical Daily pada Senin (6/5) waktu setempat menyebutkan bahwa menurut hasil penelitian tersebut, mengikuti sesi pengamatan burung selama 30 menit lima kali setiap pekan bisa meningkatkan kesejahteraan mental dan mengurangi tekanan psikologis di kalangan mahasiswa.
+            \n\nTim peneliti juga mendapati aktivitas sederhana yang mudah dijalankan itu bisa memberikan kesejahteraan subjektif yang lebih baik dan mengurangi tekanan dibandingkan dengan bentuk-bentuk paparan alam yang lain, seperti berjalan-jalan di alam.
+            \n\n"Ada banyak riset tentang kesejahteraan pada masa pandemi yang menunjukkan bahwa remaja dan mahasiswa yang paling kesulitan. Khususnya pelajar dan mahasiswa, tampaknya itu kelompok yang kesusahan dalam menjangkau alam dan mendapatkan manfaat tersebut," kata Nils Peterson, salah satu penulis hasil studi dari North Carolina State University.
+            \n\n"Pengamatan burung adalah salah satu cara yang paling umum dilakukan manusia untuk berinteraksi dengan satwa liar…, dan kampus menyediakan tempat untuk mengakses aktivitas tersebut bahkan di lingkungan perkotaan," katanya.
+            \n\nDalam risetnya, para peneliti melibatkan 112 peserta siswa yang dibagi dalam tiga kelompok: kelompok kontrol, kelompok jalan-jalan di alam, dan kelompok mengamati burung yang ditugasi mengikuti lima sesi mengamati burung selama 30 menit.
+            \n\nMereka kemudian dievaluasi menggunakan survei WHO-5, alat dengan lima pertanyaan untuk menilai kesejahteraan pada skala nol hingga lima berdasarkan perasaan selama dua minggu terakhir.
+            \n\nMeskipun semua kelompok menunjukkan peningkatan skor WHO-5, kelompok pengamat burung yang memulai dengan skor lebih rendah berakhir mendapatkan skor lebih tinggi dibandingkan kelompok lainnya.
+            \n\nDengan menggunakan daftar pertanyaan serupa untuk mengukur tekanan, para peneliti juga mendapati kegiatan yang bersentuhan dengan alam, khususnya pengamatan burung dan jalan-jalan di alam, dapat memicu penurunan tekanan psikologis.
+            \n\nHasil penelitian itu mendukung gagasan bahwa mengamati burung membantu meningkatkan kesehatan mental dan membuka banyak jalan untuk penelitian di masa depan, termasuk studi untuk mengetahui mengapa mengamati burung membantu orang merasa lebih baik.
+        </item>
+        <item>
+            Ketika seseorang menghadapi masalah kesehatan mental yang memengaruhi kualitas hidup mereka, penting untuk mempertimbangkan untuk menemui seorang psikiater atau psikolog. Psikiater adalah dokter yang telah mengikuti pelatihan medis dan memiliki kemampuan untuk mendiagnosis serta meresepkan obat-obatan untuk kondisi mental tertentu.
+            \n\nPsikiater biasanya merawat kasus-kasus yang lebih kompleks atau yang membutuhkan pengobatan farmakologis. Seseorang yang merasa terjebak dalam siklus emosional yang tidak sehat, seperti depresi berkepanjangan, kecemasan yang mengganggu, atau gangguan makan yang merugikan kesehatan, harus mempertimbangkan untuk menemui seorang psikiater atau psikolog.
+            \n\nLantas kapan harus ke psikiater? Hal ini sering menjadi pertanyaan bagi kebanyakan orang. Sebelum mengetahui kapan harus ke psikiater, anda perlu mengenali tanda-tanda seseorang harus konsultasi kepada tenaga medis.
+            \n\nSeseorang sebaiknya berkonsultasi dengan seorang psikiater ketika mereka mengalami masalah kesehatan mental yang mengganggu aktivitas sehari-hari atau mempengaruhi kualitas hidup mereka secara signifikan. Namun melansir dari Ciputra Medical Center, soal kapan harus ke psikolog atau psikiater, bahwa seseorang tidak harus menunggu hingga gejala menjadi sangat berat untuk berkonsultasi dengan psikolog.
+            \n\nBeberapa tanda yang mengindikasikan waktu yang tepat untuk mengunjungi psikiater termasuk perubahan mendadak dalam suasana hati yang berkepanjangan, seperti depresi yang dalam atau kecemasan yang terus-menerus. Selain itu, jika seseorang mulai mengalami tanda-tanda berikut ini maka harus segera konsultasi ke psikiater:
+            \n\n1. Perubahan Emosional yang Signifikan\nPerubahan tiba-tiba dalam suasana hati yang berlangsung lama, seperti perasaan sedih yang tidak hilang, kecemasan yang berlebihan, atau mood swings yang ekstrem, bisa menjadi tanda bahwa seseorang membutuhkan bantuan dari seorang psikiater.
+            \n\n2. Gangguan Pola Tidur\nKesulitan tidur, baik itu insomnia yang kronis atau tidur berlebihan yang tidak normal, bisa menjadi tanda adanya masalah kesehatan mental yang mendasari dan menjadi alasan untuk mencari bantuan dari psikiater.
+            \n\n3. Perubahan dalam Pola Makan\nGangguan makan seperti anoreksia, bulimia, atau kebiasaan makan yang tidak sehat bisa menjadi indikator penting bahwa seseorang memerlukan bantuan profesional untuk mengatasi masalah kesehatan mental mereka.
+            \n\n4. Pikiran Obsesif atau Perilaku Kompulsif\nJika seseorang mengalami pikiran atau kecenderungan untuk melakukan tindakan tertentu secara berulang-ulang, seperti menghitung, membersihkan, atau memeriksa hal-hal secara berlebihan, itu bisa menjadi tanda gangguan obsesif-kompulsif yang memerlukan perawatan psikiater.
+            \n\n5. Isolasi Sosial yang Signifikan\nMenghindari interaksi sosial secara terus-menerus atau menarik diri dari hubungan sosial yang biasa bisa menjadi tanda bahwa seseorang mengalami masalah kesehatan mental yang membutuhkan perhatian profesional.
+            \n\n6. Perubahan dalam Kinerja Sekolah atau Kerja\nPenurunan tajam dalam kinerja akademis atau pekerjaan, ketidakmampuan untuk berkonsentrasi atau membuat keputusan, serta masalah dalam berkomunikasi bisa menjadi tanda adanya masalah kesehatan mental yang memerlukan bantuan dari psikiater.
+            \n\n7. Pemikiran dan Rencana Bunuh Diri\nJika seseorang mulai memiliki pemikiran atau rencana untuk menyakiti diri sendiri atau bunuh diri, itu merupakan keadaan darurat yang memerlukan perhatian segera dari seorang psikiater atau profesional kesehatan mental.
+            \n\n8. Perubahan dalam Kebiasaan atau Kepribadian\nPerubahan yang signifikan dalam kebiasaan sehari-hari atau kepribadian seseorang, seperti peningkatan konsumsi alkohol atau narkoba, agresivitas yang tidak biasa, atau perubahan dalam minat dan hobi, bisa menjadi tanda adanya gangguan kesehatan mental yang perlu ditangani oleh psikiater.
+            \n\n9. Masalah Interaksi dalam Hubungan\nKesulitan dalam menjalin dan mempertahankan hubungan yang sehat dengan orang lain, seperti konflik yang berulang dalam hubungan interpersonal, kekerasan dalam rumah tangga, atau ketidakmampuan untuk membangun hubungan yang dekat dan bermakna, bisa menjadi tanda masalah kesehatan mental yang membutuhkan perawatan dari psikiater.
+            \n\n10. Baru Kehilangan Seseorang yang Dicintai\nKehilangan seseorang yang sangat berarti akan meninggalkan lubang duka yang dalam di dalam jiwa seseorang. Ada kalanya duka tersebut terlalu besar untuk ditanggung sendiri. Bukan berarti setiap kali mengalami duka maka harus menemui psikiater. Lantas, kapan harus ke psikiater? Duka yang menyebabkan kesedihan berlarut, gangguan tidur, stres, gejala depresi, atau perubahan negatif lain terkadang harus dihadapi secara medis dengan konsultasi ke psikiater atau psikolog.
+            \n\n11. Kecanduan Narkoba maupun Alkohol\nKecanduan zat adiktif sangat berbahaya, baik secara mental apalagi fisik. Selain membutuhkan terapis khusus atau konselor adiksi, terkadang seorang pecandu juga harus menemui psikiater. Bukan hanya kecanduan narkoba atau alkohol, seseorang juga butuh bantuan psikiater saat mengalami kecanduan seks, jenis makanan tertentu, atau kebiasaan menyakiti diri.
+        </item>
+        <item>
+            Berdamai dengan diri sendiri adalah suatu proses penting dalam kehidupan yang semakin diperlukan seiring dengan bertambahnya usia. Sebab, pemahaman yang semakin dalam terhadap diri sendiri sering kali menampakkan kekurangan-kekurangan yang sulit diterima.
+            \n\nBerdamai dengan diri sendiri bukanlah hal yang mudah. Terkadang, individu memberikan ekspektasi dan target yang terlalu tinggi pada diri sendiri, yang justru membuatnya terbebani. Membanding-bandingkan diri dengan orang lain juga dapat menjadi hambatan dalam proses ini, karena seringkali seseorang berkecil hati ketika melihat kehidupan orang lain.
+            \n\nBerdamai dengan diri sendiri adalah sebuah keadaan di mana seseorang telah mampu menerima semua hal yang ada di dalam diri dan kehidupannya. Ini mencakup menerima kelebihan, kekurangan, luka batin, bahkan kesalahan yang pernah terjadi di masa lalu.
+            \n\nBerdamai dengan diri sendiri adalah langkah penting dalam menjalani kehidupan yang penuh makna dan bahagia. Upaya ini perlu dilakukan karena adanya peristiwa-peristiwa yang melibatkan emosi negatif seringkali menghalangi individu untuk terbuka terhadap hal baru, mencoba hal-hal baru, dan membentuk kebiasaan positif.
+            \n\nKetika seseorang  terjebak dalam perasaan dan pemikiran negatif tentang kegagalan, kesakitan, penyesalan, dan sejenisnya, hal tersebut dapat menghambat atau bahkan membatalkan langkah-langkahnya dalam mencapai tujuan dan memaksimalkan potensi yang dimiliki.
+            \n\nPenelitian dalam bidang psikologi positif menunjukkan bahwa memaafkan dan berdamai dengan diri sendiri memiliki dampak yang signifikan terhadap kesehatan mental. Beberapa dampak positif tersebut meliputi mengurangi emosi negatif dan gejala depresi, membuat pikiran lebih positif, memperbaiki relasi sosial, mengurangi kecemasan, meningkatkan spiritualitas, menaikkan kepercayaan diri, memberikan harapan dan tujuan yang lebih besar, mudah mengatasi konflik, serta lebih mampu mengatasi stres.
+            \n\nDengan demikian, berdamai dengan diri sendiri bukan hanya merupakan suatu kebutuhan psikologis, tetapi juga memiliki dampak yang luas terhadap kesejahteraan individu secara keseluruhan. Ini adalah langkah penting dalam proses pertumbuhan menjadi pribadi yang lebih baik, serta meraih kehidupan yang lebih bermakna.
+        </item>
+        <item>
+            Dalam era digital yang kian berkembang, teknologi sangat berdampak terhadap setiap aspek kehidupan termasuk psikologis setiap manusia. Teknologi mengalami perubahan pada bidang ICT (Information and Comunication Technology), salah satunya yang biasa kita sebut dengan media sosial. Media sosial telah menjadi bagian integral dari kehidupan sehari-hari, khususnya bagi generasi Z yang terbiasa dengan teknologi sejak usia dini. Media sosial tidak hanya menjadi media pembelajaran dan komunikasi, namun juga menjadi media ekspresi diri. Contoh media sosial seperti Twitter, Facebook, Instagram, WhatsApp, dan Tiktok telah menjadi media yang memfasilitasi interaksi sosial antar individu. Bagi generasi Z penggunaan jejaring sosial merupakan bagian normatif dalam pertumbuhan di dunia digital. Meskipun media sosial menawarkan konektivitas global dan kemudahan berkomunikasi, dampaknya terhadap kesehatan mental generasi Z menjadi semakin terlihat.
+            \n\nSosial media telah memberikan dampak yang signifikan pada perilaku, pola pikir, dan interaksi sosial. Salah satu dampak utama dari penggunaan media sosial adalah peningkatan risiko gangguan kesehatan mental, termasuk kecemasan, depresi, dan gangguan tidur. Generasi Z sering kali merasa tertekan oleh tekanan untuk menampilkan kehidupan yang sempurna dan ideal di media sosial. Pameran kehidupan yang diarahkan secara selektif ini dapat menciptakan perasaan tidak memadai dan kurangnya kepercayaan diri dengan perbandingan sosial yang merugikan, yang kemudian dapat berkontribusi pada depresi dan kecemasan. Tekanan untuk mendapatkan jumlah "like" dan "followers" yang tinggi dapat memicu perasaan tidak aman dan kekhawatiran akan popularitas mereka di antara teman sebaya. Karena ketidakmampuan untuk memenuhi standar sosial media dapat memperburuk rasa cemas dan mengganggu kesejahteraan emosional mereka secara keseluruhan.
+            \n\nSelain itu, fenomena cyberbullying juga menjadi masalah serius di kalangan generasi Z. Media sosial memberikan platform bagi perilaku intimidasi dan pelecehan yang dapat memengaruhi kesehatan mental secara signifikan. Dengan mudahnya menyebarkan pesan negatif dan merugikan. Berbagi studi telah menunjukkan bahwa cyberbullying dapat meningkatkan tingkat stres dan menurunkan rasa percaya diri pada generasi Z. Teori psikologi juga menyatakan bahwa orang memiliki pengendalian diri yang terbatas dan ketika dihadapkan pada situasi yang menantang atau penuh tekanan, mungkin dapat terlibat dalam perilaku yang memberikan kepuasan instan tetapi tidak sesuai dengan tujuan jangka panjang nya.
+            \n\nPenggunaan media sosial yang berlebihan juga berdampak negatif pada pola tidur. Di media sosial, pengguna bisa merasa marah atau senang ketika membicarakan suatu hal. Sementara itu, mata yang sulit terpejam saat bermain media sosial disebabkan oleh cahaya yang dipancarkan layar ponsel sehingga mengganggu ritme sirkadian tubuh. Gangguan pola tidur inilah yang membuat generasi Z mengalami penurunan semangat dalam menjalani aktivitas sehari – hari sehingga akan berdampak pada kualitas hidup mereka. Generasi Z cenderung terjebak dalam pola perilaku yang menghabiskan waktu berjam-jam di depan layar, mengganggu kualitas tidur dan mengurangi waktu yang dihabiskan untuk kegiatan fisik dan interaksi sosial langsung. Akibatnya, dapat merugikan kesehatan baik fisik maupun mental, termasuk penyakit kardiosvaskular dan metabolism, kecemasan dan depresi, serta penurunan fungsi kognitif.
+            \n\nMeskipun demikian, media sosial juga dapat menjadi alat yang bermanfaat untuk mendukung kesehatan mental generasi Z jika digunakan dengan bijak. Berbagai platform menyediakan ruang aman bagi individu untuk berbagi pengalaman, mendapatkan dukungan, dan mencari informasi tentang kesehatan mental. Kampanye kesadaran dan gerakan positif juga dapat tersebar dengan cepat melalui media sosial, membantu mengurangi stigma terkait dengan masalah kesehatan mental. Pentingnya pendidikan digital dan kesadaran diri dalam mengelola penggunaan media sosial menjadi kunci untuk meminimalkan dampak negatifnya terhadap kesehatan mental generasi Z. Mengembangkan keterampilan literasi media dan mengadopsi praktik-praktik yang sehat dalam penggunaan media sosial dapat membantu generasi Z mengatasi tekanan dan risiko yang terkait dengan lingkungan digital mereka.
+            \n\nDapat disimpulkan, media sosial memiliki dampak yang signifikan terhadap kesehatan mental generasi Z. Mulai dari masalah perbandingan dan harga diri hingga kecemasan dan depresi, cyberbullying, serta gangguan pola tidur. Meskipun menyediakan konektivitas dan kesempatan untuk ekspresi diri, penggunaan yang berlebihan dan eksposur terhadap tekanan sosial dapat menyebabkan masalah kesehatan mental yang serius. Penting bagi individu dan masyarakat secara keseluruhan untuk memahami risiko ini dan mengambil langkah-langkah yang diperlukan untuk mempromosikan penggunaan yang sehat dan bertanggung jawab dari media sosial. Mereka juga perlu menyadari bahwa apa yang dilihat dari platform tersebut tidak selalu mencerminkan kehidupan nyata. Selain itu, peran orang tua, pendidik, dan masyarakat dalam memberikan pemahaman yang baik tentang media sosial dan memberikan dukungan untuk penggunaan yang sehat dan cerdas juga sangat penting. Memanfaatkan aspek positif media sosial dan mengatasi potensi dampak negatifnya dapat membantu meningkatkan kesehatan mental generasi Z dan seterusnya.
+        </item>
+        <item>
+            Kecemasan adalah respon alami manusia, namun ketika kecemasan menjadi terlalu berlebihan dan terus-menerus tanpa sebab yang jelas, ini bisa menjadi tanda gangguan kecemasan yang serius. Rasa cemas normalnya akan mereda ketika faktor pemicunya hilang.
+            \n\nSebagai contoh, seseorang yang merasa cemas menjelang ujian akan merasa lega setelah ujian selesai. Namun, bagi individu yang mengalami rasa cemas berlebihan, perasaan ini terus menghantui tanpa alasan yang jelas.
+            \n\nJika tidak ditangani, rasa cemas berlebihan dapat mengganggu aktivitas sehari-hari seseorang. Hal ini dapat mengakibatkan penurunan performa di tempat kerja atau prestasi belajar di sekolah, serta kesulitan dalam berinteraksi dengan orang lain. Oleh karena itu, penting bagi individu yang mengalami kecemasan berlebihan untuk mencari bantuan dan penanganan yang tepat.
+            \n\nDengan mengenali gejala rasa cemas berlebihan, individu dapat mencari bantuan dari profesional kesehatan mental untuk menemukan strategi penanganan agar kondisi mentalnya lebih baik.
+            \n\nRasa cemas berlebih berlebihan dapat dipicu oleh berbagai jenis gangguan kecemasan, masing-masing dengan karakteristik dan gejala yang khas. Mengetahui jenis-jenis gangguan kecemasan ini dapat membantu dalam mengidentifikasi pemicu-pemicu yang mungkin memicu kecemasan berlebihan seseorang. Berikut adalah beberapa jenis gangguan kecemasan yang umum.
+            \n\n1. Gangguan Kecemasan Umum (Generalized Anxiety Disorder - GAD)
+            \nGAD ditandai dengan perasaan cemas, khawatir, atau takut yang berlebihan, yang berlangsung setidaknya selama 6 bulan. Orang dengan GAD dapat merasa cemas tanpa faktor pemicu yang jelas, dan biasanya mengalami gejala seperti susah tidur, kesulitan berkonsentrasi, dan gangguan pencernaan.
+            \n\n2. Gangguan Panik
+            \nGangguan panik melibatkan munculnya serangan kecemasan yang sangat intens secara tiba-tiba, biasanya berlangsung dalam beberapa menit. Gejalanya bisa meliputi nyeri dada, sesak napas, dan pusing.
+            \n\n3. Fobia
+            \nFobia merupakan ketakutan berlebihan terhadap objek atau situasi tertentu. Penderita fobia dapat menghindari objek atau situasi tersebut dan merasa cemas hanya dengan memikirkannya.
+            \n\n4. Gangguan Kecemasan Sosial
+            \nJuga dikenal sebagai fobia sosial, gangguan ini ditandai dengan rasa cemas berlebihan terhadap interaksi sosial sehari-hari, seperti berbicara di depan orang banyak.
+            \n\n5. Gangguan Stres Pascatrauma (Post-traumatic Stress Disorder - PTSD)
+            \nPTSD terjadi setelah seseorang mengalami peristiwa traumatis, seperti kecelakaan atau kekerasan seksual. Penderita PTSD mengalami kecemasan berlebihan serta sering mengingat kembali peristiwa tersebut.
+            \n\n4. Gangguan Obsesif Kompulsif (Obsessive-Compulsive Disorder - OCD)
+            \nOCD melibatkan pola pikir dan perilaku yang obsesif, seperti kebutuhan untuk melakukan tindakan tertentu secara berulang-ulang, seperti mencuci tangan.
+        </item>
+        <item>
+            Cek mental health secara rutin merupakan langkah yang penting dalam menjaga kesejahteraan psikologis seseorang. Proses pemeriksaan ini melibatkan serangkaian tindakan untuk mengevaluasi kondisi kesehatan mental dan mendeteksi potensi gangguan kejiwaan. Metode yang umum digunakan meliputi tanya jawab, pemeriksaan fisik, dan pengisian kuesioner dengan profesional seperti psikiater atau psikolog.
+            \n\nStress merupakan salah satu faktor psikologis utama yang dapat menyebabkan seseorang mengalami gangguan mental, terutama jika dibiarkan tanpa penanganan yang tepat. Namun, selain stress, terdapat faktor-faktor lain yang juga dapat meningkatkan risiko seseorang mengalami gangguan kejiwaan, seperti faktor genetik, kerusakan otak, atau kondisi lingkungan tertentu.
+            \n\nCek mental health dapat dilakukan secara rutin atau dalam keadaan darurat. Pemeriksaan rutin bertujuan untuk memeriksa kondisi kejiwaan secara menyeluruh, sehingga dapat memberikan gambaran yang lebih komprehensif mengenai kesehatan mental seseorang.
+            \n\nSementara itu, pemeriksaan darurat lebih difokuskan pada gejala yang muncul, riwayat gangguan, dan perilaku pasien sebelum mengalami gangguan kejiwaan.
+            \n\nMelakukan cek mental health secara rutin penting terutama bagi mereka yang memiliki risiko mengalami gangguan mental atau sedang mengalami tekanan batin yang berat. Skrining ini merupakan langkah awal yang krusial dalam menjaga kesejahteraan psikologis seseorang. Tidak jarang, gangguan kesehatan mental yang terlambat terdeteksi dapat menyebabkan penurunan kualitas hidup yang signifikan bahkan hingga resiko bunuh diri.
+            \n\nSebagian orang masih menganggap bahwa skrining kesehatan mental hanya diperlukan bagi mereka yang sudah menunjukkan gejala gangguan mental. Padahal, hal ini merupakan anggapan yang keliru. Skrining dapat dilakukan oleh siapa saja tanpa harus menunggu munculnya gejala, karena mendeteksi masalah kesehatan mental sedini mungkin merupakan kunci penting dalam mengatasi serta mencegah komplikasi yang lebih serius di masa depan.
+            \n\nTingkat stres dan kecemasan yang meningkat secara signifikan karena masalah sehari-hari yang tidak teratasi dapat meningkatkan risiko terkena masalah kesehatan mental. Oleh karena itu, skrining awal menjadi langkah efektif dalam menjaga kesehatan mental di tengah situasi yang menantang ini.
+            \n\nManfaat dari skrining awal kesehatan mental meliputi kemampuan untuk mendeteksi dini atau menilai risiko seseorang terhadap berbagai gangguan mental seperti kecemasan, depresi, bipolar, gangguan makan, hingga PTSD. Semakin cepat masalah ini teridentifikasi, semakin baik pula efektivitas intervensi yang dapat diberikan oleh para profesional kesehatan mental. Hal ini membantu mencegah terjadinya komplikasi lebih lanjut atau bahkan risiko yang lebih besar seperti penggunaan obat-obatan terlarang atau pikiran bunuh diri.
+            \n\nIndividu yang mengalami gejala-gejala seperti kecemasan berlebihan, perubahan suasana hati yang ekstrem, kelelahan yang tidak wajar, atau pikiran untuk menyakiti diri sendiri sangat dianjurkan untuk mendapatkan skrining kesehatan mental secara teratur. Langkah ini dapat membantu menjaga kesehatan mental secara menyeluruh serta memungkinkan individu untuk mendapatkan bantuan yang tepat sesegera mungkin jika diperlukan.
+        </item>
+        <item>
+            Insecure adalah perasaan tidak nyaman yang membuat seseorang merasa risih, takut, malu, hingga tidak percaya diri. Perasaan ini bisa berasal dari diri sendiri maupun dari luar. Contoh penyebab insecure adalah merasa setara, merasa punya citra tubuh yang buruk, memiliki sifat perfeksionis, ataupun memiliki kepribadian melankolis.
+            \n\nFaktor penyebab insecure
+            \nAda beberapa faktor yang bisa menyebabkan seseorang merasa insecure, seperti pengalaman traumatis, kegagalan, penolakan, dan persepsi negatif terhadap diri sendiri. insecure juga bisa timbul akibat faktor lingkungan, gangguan makan, atau kesehatan mental.
+            \n\nSelain itu, penggunaan media sosial yang berlebihan juga dapat menjadi pemicu munclnya perasaan insecure pada remaja, karena mereka cenderung membandingkan kehidupan mereka dengan apa yang ditampilkan di media sosial, yang dapat berdampak negatif pada kesehatan mental mereka.
+            \n\nApakah insecure dapat mempengaruhi psikologis remaja?
+            \n\nInsecure ternyata berpengaruh pada kesehatan mental remaja. Perasaan insecure dapat menyebabkan  gangguan mental seperti depresi, kecemasan, dan bahkan gangguan kepribadian jika tidak ditangani dengan benar. 
+            \n\nOleh karena itu, penting untuk memberikan perhatian dan dukungan kepada remaja yang mengalami perasaan insecure supaya mereka dapat mengatasi dan mengelola perasaan tersebut dengan baik.
+            \n\nBagaimana cara mengatasi perasaan insecure?
+            \n\nAda beberapa cara mengatasi perasaan insecure, seperti :
+            \n- Berusaha untuk tetap berpikir positif
+            \n- Berhenti menyalahkan diri sendiri
+            \n- Jangan membandingkan diri dengan orang lain
+            \n- Menghindari orang yang membuat anda merasa insecure
+            \n -Melakukan aktivitas yang disenangi
+            \n- Memberi apresiasi pada diri sendiri
+            \n- Dan berbicara dengan orang yang bisa dipercaya.
+        </item>
+        <item>
+            Kesehatan mental yang baik merupakan pondasi utama bagi kehidupan yang seimbang dan bahagia. Dalam kesibukan sehari-hari, seringkali kita lupa untuk memberikan perhatian yang cukup pada kesehatan mental kita. Berikut adalah beberapa tips dan trik harian yang dapat membantu Anda menjaga kesehatan mental:
+            \n\n1. Berolahraga Secara Teratur\nOlahraga tidak hanya bermanfaat bagi kesehatan fisik, tetapi juga memiliki dampak positif pada kesehatan mental. Aktivitas fisik dapat meningkatkan produksi endorfin, hormon yang dapat meningkatkan suasana hati dan mengurangi stres. Sediakan waktu setiap hari untuk bergerak, entah itu dengan berjalan-jalan, berlari, atau melakukan olahraga favorit Anda.
+            \n\n2. Tidur Cukup\nKurang tidur dapat berdampak negatif pada kesehatan mental dan kesejahteraan secara keseluruhan. Pastikan untuk mendapatkan 7-9 jam tidur setiap malam. Rutinitas tidur yang baik dapat membantu menjaga keseimbangan emosional dan meningkatkan ketahanan terhadap stres.
+            \n\n3. Menerapkan Teknik Relaksasi\nTeknik-teknik relaksasi seperti meditasi, yoga, dan pernapasan dalam dapat membantu mengurangi tingkat stres dan meningkatkan fokus. Sisihkan waktu setiap hari untuk melibatkan diri dalam praktik relaksasi ini, baik pagi atau malam.
+            \n\n4. Mengatur Waktu untuk Kesenangan\nTentukan waktu untuk melakukan aktivitas yang Anda nikmati. Itu bisa berupa membaca buku, menonton film, mendengarkan musik, atau melakukan hobi kreatif. Kegiatan-kegiatan ini dapat menjadi pelarian yang menyenangkan dan membantu mengurangi tekanan.
+            \n\n5. Menjaga Koneksi Sosial\nHubungan sosial yang baik dapat memiliki dampak positif pada kesehatan mental. Ajak teman-teman atau keluarga untuk berkumpul, atau jika tidak memungkinkan secara fisik, pertahankan komunikasi melalui panggilan telepon atau video call. Rasa dukungan sosial dapat memberikan ketenangan pikiran.
+            \n\n6. Mengelola Tugas Secara Bertahap\nJangan terlalu keras pada diri sendiri. Bagi tugas besar menjadi tugas yang lebih kecil dan kelola satu langkah pada satu waktu. Ini dapat membantu mengurangi rasa kewalahan dan meningkatkan rasa pencapaian.
+            \n\n7. Bersikap Positif dan Berterima Kasih\nFokus pada hal-hal positif dalam hidup dan praktikkan rasa syukur. Menuliskan hal-hal yang membuat Anda bersyukur setiap hari dapat meningkatkan suasana hati dan membantu menjaga perspektif positif.
+            \n\n8. Mencari Bantuan Profesional Jika Diperlukan\nJika Anda merasa kesulitan mengatasi masalah kesehatan mental, jangan ragu untuk mencari bantuan dari profesional. Psikolog, psikiater, atau konselor dapat memberikan dukungan dan alat yang Anda butuhkan.
+            \n\nDengan mengintegrasikan tips dan trik ini ke dalam rutinitas harian, Anda dapat membangun dasar yang kokoh untuk menjaga kesehatan mental Anda. Ingatlah bahwa kesehatan mental adalah perjalanan yang berkelanjutan, dan memberikan perhatian terus-menerus adalah kunci untuk mencapai keseimbangan dan kebahagiaan.
+        </item>
+        <item>
+            Kesehatan mental merupakan aspek terpenting dalam menjaga keseimbangan dan kualitas hidup seseorang.
+            \n\nMeski sering diabaikan, namun disadari bahwa kesehatan mental merupakan suatu hal penting karena memiliki dampak yang signifikan terhadap kesejahteraan seseorang. Mengingat pentingnya hal ini, penting untuk meningkatkan kesadaran tentang kesehatan mental.
+            \n\nTidak dapat dipungkiri bahwa kehidupan modern seringkali menimbulkan stres bagi banyak orang. Tekanan sosial, masalah keuangan, hubungan sosial yang buruk dan ketidak pastian masa depan adalah beberapa stres yang kerap berdampak buruk pada kesehatan mental seseorang. Oleh karena itu, penting untuk meningkatkan kesadaran tentang pentingnya menjaga kesehatan mental.
+            \n\nSalah satu kunci terpenting untuk menjaga kesehatan mental adalah meluangkan waktu untuk diri sendiri, mendedikasikan waktu untuk  aktivitas yang menyenangkan seperti hobi dan olahraga dapat membantu mengurangi stres dan meningkatkan kesehatan mental
+        </item>
+        <item>
+            Perlu dipahami bahwa hidup ini memang penuh lika-liku. Hampir tidak ada hidup seseorang yang selalu lancar dan baik-baik saja. Bahkan orang yang sukses dan kaya raya pun tetap pernah melewati titik terendah dalam hidupnya. Seperti halnya Jack Ma, seorang pendiri Alibaba Group. Ia telah melewati berbagai macam kegagalan hingga akhirnya sukses menjadi seorang pengusaha besar.
+            \n\nUntuk mencapai sesuatu hal yang besar, kita harus berjuang dari bawah dan melalui berbagai macam rintangan. Untuk bisa mengejar mimpi dan menjadi seseorang yang sukses, kita pasti akan terbentur dengan tekanan dan juga rasa yang stres. Sehingga kita membutuhkan mental yang kuat untuk dapat maju dan tidak mudah menyerah. Memiliki mental yang lemah hanya akan menghalangi kita untuk berpikir lebih positif dan akan terjebak di dalam pola pikir yang bisa merendahkan mental diri sendiri.
+            \n\nApapun yang kita hadapi di dalam hidup, mental yang kuat adalah solusi utama. Untuk memiliki mental yang kuat, kita bisa melatihnya dengan beberapa cara. Ada beberapa kebiasaan yang dapat kita lakukan untuk mendapatkan mental yang kuat. Berikut adalah beberapa diantaranya:
+            \n\n1. Selalu Berpikir Positif\nKita mungkin akan mengalami dan merasakan kegagalan dan kekecewaan dalam kehidupan pribadi ataupun profesional. Jangan mudah larut dalam kesedihan dan memutuskan untuk menyerah. Cobalah untuk selalu berpikir positif akan dua hal tersebut. Bagaimana caranya? Terimalah kegagalan dan kekecewaan tersebut dan jadikan itu semua sebagai pelajaran dan pengalaman penting untuk menuntun ke jalan yang lebih baik. Dengan begitu, mental kita akan terbentuk dan tidak mudah terpuruk.
+            \n\n2. Selalu Mengingat Tuhan\nMental akan kuat jika memperoleh dukungan yang kuat juga, benar bukan? Sebagai seseorang yang percaya akan Tuhan dan memiliki agama, tentu kita percaya bahwa Tuhan adalah satu-satunya dukungan terkuat di dunia. Jadi, usahakan untuk mengingat Tuhan setiap saat supaya mental tetap kuat.
+            \n\n3. Jangan Terlalu Memikirkan Perkataan Orang Lain\nKomentar negatif yang berasal dari orang lain, bahkan mungkin dari orang-orang terdekat pasti akan kita terima. Mungkin ada banyak dari kita yang sering mendengar perkataan kurang enak dari mereka. Salah satu melatih mental agar tetap kuat adalah dengan tidak memusingkan perkataan negatif dari orang lain. Karena memikirkan hal-hal yang sebenarnya tidak penting justru akan membuat mental kita semakin terpuruk.
+            \n\n4. Asah Kemampuan Diri\nAdapun cara selanjutnya yang bisa kamu lakukan untuk menguatkan mental yaitu dengan terus belajar dan mengasah kemampuan diri sendiri. Hal itu bisa kamu peroleh melalui latihan, belajar, mengikuti kursus, dan mencoba strategi baru. Misalnya saja, apabila kamu seorang mahasiswa dan akan mengikuti ujian semester. Maka yang perlu kamu lakukan adalah belajar mengenai materi-materi yang pernah dijelaskan oleh dosen terkait. Dengan begitu, kamu akan lebih percaya diri untuk menghadapi ujian tersebut.
+            \n\n5. Lakukan Satu Hal Sulit Dalam Satu Minggu Secara Rutin\nMemiliki mental yang kuat, itu artinya kita harus berani berbuat. Untuk melatih mental, kamu bisa belajar hal baru yang mungkin sebelumnya belum pernah kamu lakukan sama sekali. Misalnya dengan mengikuti kursus tertentu. Dorong diri kamu untuk keluar dari zona nyaman. Jangan batasi diri dengan rasa takut akan kegagalan.
+        </item>
+    </string-array>
+
+    <!-- Detail Article -->
+    <string name="sample_article_picture">Article Picture</string>
+    <string name="sample_article_title">Study Finds Nature Walks Boost Mental Well-being</string>
+    <string name="sample_article_date">5 May 2024</string>
+    <string name="sample_article_desc">A recent study published highlights the significant positive impact of nature walks on mental well-being. This research underscores the psychological benefits of interacting with the natural environment and reinforces the importance of integrating nature into our daily routines.\n\nConducted by a team of researchers from XYZ University, the study involved over 200 participants divided into two groups. The first group was instructed to walk for 60 minutes in a densely urban area, while the second group walked in a serene forested area. Both groups were then assessed based on several indicators of mental well-being, including stress levels, anxiety, mood, and overall happiness.\n\nThe results showed that the group walking in nature experienced a significant decrease in stress and anxiety levels compared to the urban-walking group. They also reported improved mood and a greater sense of happiness. "Walking in nature provides a powerful restorative effect on mental well-being," said Dr. Jane Doe, the lead researcher. "Interacting with nature can help reduce tension and bring feelings of calmness and joy."\n\nThis research reinforces a long-held belief that nature has a calming effect on the human mind. Furthermore, these findings align with several previous studies indicating that engaging with nature can enhance cognitive function and reduce symptoms of depression.</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="bubble_background">Bubble Background</string>
+    <string name="user_fullname">User</string>
+    <string name="user_email">user@gmail.com</string>
+    <string name="icon_history">Icon History</string>
+    <string name="icon_maps">Icon Maps</string>
+    <string name="maps">Maps</string>
+    <string name="history">History Chat</string>
+    <string name="icon_edit_profile">Icon Edit Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="icon_change_password">Icon Change Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="icon_language">Icon Language</string>
+    <string name="language">Language</string>
+    <string name="icon_logout">Icon Logout</string>
+    <string name="logout">Logout</string>
+    <string name="failed_get_account">Failed to get account data</string>
+    <string name="text_classifier_error">Text classfier failed to initialize</string>
+
+    <!-- Maps -->
+    <string name="failed_nearby_hospital">Failed to display nearby hospitals. Please try again later.</string>
+
+    <!-- History -->
+    <string name="mental_health">Mental Health</string>
+    <string name="icon_heart">Icon Mental Health</string>
+    <string name="illust_mental_health">Illustration Mental Health</string>
+    <string name="high_mental_health">Your mental health percentage shows high, hope your days are always happy :)</string>
+    <string name="low_mental_health">Your mental health percentage shows low, please consult your psychologist/psychiatrist immediately.</string>
+    <string name="back">Back</string>
+    <string name="see_history">See History</string>
+
+    <!-- Edit Profile -->
+    <string name="back_button">Back Button</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="illust_edit_profile">Illustration Edit Profile</string>
+    <string name="failed_changes">Failed to save changes</string>
+    <string name="success">Success</string>
+    <string name="changes_success">Changes successfully saved</string>
+    <string name="ok">OK</string>
+    <string name="close">Close</string>
+    <string name="take_photo">Take photo</string>
+    <string name="cancel_camera">Cancel</string>
+    <string name="icon_capture_camera">Icon Capture Camera</string>
+    <string name="icon_switch_camera">Icon Switch Camera</string>
+    <string name="choose_gallery">Choose from gallery</string>
+    <string name="delete_photo">Delete photo</string>
+
+    <!-- Change Password -->
+    <string name="current_pass">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_new_pass">Confirm New Password</string>
+    <string name="success_logout">You have successfully logged out</string>
+</resources>

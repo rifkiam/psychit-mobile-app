@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shades_50"
+    tools:context=".ui.auth.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/illust_login"
+            android:layout_width="330dp"
+            android:layout_height="240dp"
+            android:contentDescription="@string/illust_login"
+            android:src="@drawable/illust_login"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/TextAppearance.AppCompat.DisplayXs.Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/login"
+            android:textColor="@color/primary_900"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/illust_login" />
+
+        <TextView
+            android:id="@+id/tv_hello"
+            style="@style/TextAppearance.AppCompat.TextSm.Regular"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_hello"
+            android:textColor="@color/neutral_700"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/TextAppearance.AppCompat.TextSm.Medium"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/email"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hello" />
+
+        <com.example.psychika.ui.custom.EmailEditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/outlined_edit_text"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            style="@style/TextAppearance.AppCompat.TextSm.Medium"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/et_login_email" />
+
+        <com.example.psychika.ui.custom.PasswordEditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/outlined_edit_text"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            app:icon="@drawable/ic_pass"
+            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+        <LinearLayout
+            android:id="@+id/layout_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/et_login_password">
+
+            <CheckBox
+                android:id="@+id/cb_remember"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:buttonTint="@color/primary_400" />
+
+            <TextView
+                android:id="@+id/tv_remember"
+                style="@style/TextAppearance.AppCompat.TextXxs.Regular"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/remember_me" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forgot_pass"
+            style="@style/TextAppearance.AppCompat.TextXxs.Regular"
+            android:layout_width="wrap_content"
+            android:text="@string/forgot_pass"
+            android:textColor="@color/primary_900"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_remember"
+            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+            app:layout_constraintTop_toTopOf="@+id/layout_remember" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+            app:layout_constraintStart_toStartOf="@+id/et_login_email"
+            app:layout_constraintTop_toBottomOf="@+id/layout_remember" />
+
+        <ImageView
+            android:id="@+id/divider_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/divider"
+            android:src="@drawable/divider"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toStartOf="@id/tv_or"
+            app:layout_constraintStart_toStartOf="@+id/et_login_email"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            style="@style/TextAppearance.AppCompat.TextXs.Medium"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/or"
+            android:textColor="@color/neutral_400"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <ImageView
+            android:id="@+id/divider_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/divider"
+            android:src="@drawable/divider"
+            app:layout_constraintBottom_toBottomOf="@id/tv_or"
+            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+            app:layout_constraintStart_toEndOf="@id/tv_or"
+            app:layout_constraintTop_toTopOf="@id/tv_or" />
+
+        <com.example.psychika.ui.custom.GoogleButton
+            android:id="@+id/btn_google"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/login_google"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_login"
+            app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+        <TextView
+            android:id="@+id/tv_dont_have_acc"
+            style="@style/TextAppearance.AppCompat.TextXs.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/dont_have_acc"
+            android:textColor="@color/neutral_900"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_signup"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_google" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            style="@style/TextAppearance.AppCompat.TextXs.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/primary_900"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_dont_have_acc"
+            app:layout_constraintTop_toTopOf="@+id/tv_dont_have_acc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

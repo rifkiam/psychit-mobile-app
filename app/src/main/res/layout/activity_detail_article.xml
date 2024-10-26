@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shades_50"
+    tools:context=".ui.article.detail.DetailArticleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/iv_article_picture"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:src="@drawable/article_picture"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/sample_article_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/shades_50" />
+
+        <LinearLayout
+            android:id="@+id/iv_white_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/white_container"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tv_article_title"
+                style="@style/TextAppearance.AppCompat.TextLg.Semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_article_title"
+                android:textColor="@color/primary_900"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintTop_toTopOf="@id/iv_white_container"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_photo_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profile_avatar"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_article_title" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_article_publisher"
+                        style="@style/TextAppearance.AppCompat.TextXs.Semibold"
+                        android:layout_width="wrap_content"
+                        android:text="@string/user_fullname"
+                        android:textColor="@color/neutral_900" />
+
+                    <TextView
+                        android:id="@+id/tv_article_date"
+                        style="@style/TextAppearance.AppCompat.TextXxs.Regular"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sample_article_date"
+                        android:textColor="@color/neutral_600"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/article_divider"
+                android:contentDescription="@string/divider" />
+
+            <TextView
+                android:id="@+id/tv_Article_desc"
+                style="@style/TextAppearance.AppCompat.TextXs.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_article_desc"
+                android:textColor="@color/neutral_900"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginHorizontal="20dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
