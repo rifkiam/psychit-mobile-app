@@ -19,7 +19,7 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl(BuildConfig.BASE_URL_PSYCHIKA)
+                .baseUrl(BuildConfig.BASE_URL_PSYCHIT)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

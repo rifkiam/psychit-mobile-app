@@ -21,6 +21,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Psychika"
+rootProject.name = "PsychIT"
 include(":app")
  

@@ -41,7 +41,7 @@ android {
         buildConfig = true
     }
     defaultConfig {
-        buildConfigField("String", "BASE_URL_PSYCHIKA", "\"http://34.34.223.17:3000/\"")
+        buildConfigField("String", "BASE_URL_PSYCHIT", "\"http://127.0.0.1:3000/\"")
         buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"https://psychika.sleepingowl.my.id/\"")
         buildConfigField("String", "BASE_URL_MAPS_NEARBY", "\"https://maps.googleapis.com/maps/api/place/nearbysearch/\"")
         buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyC1fNwFxe1cmbkbOnaFeThzGglQlO7j6KU\"")

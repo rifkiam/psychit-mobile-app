@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name" translatable="false">Psychika</string>
+    <string name="app_name" translatable="false">PsychIT</string>
 
     <string name="press_back_again">Tekan kembali lagi untuk keluar</string>
     <string name="web_client_id" translatable="false">422866453064-f60vsdil6hdr6ftsm2c9srvgtivjdh5m.apps.googleusercontent.com</string>
 
     <!-- Splash -->
-    <string name="logo_app" translatable="false">Logo Psychika</string>
+    <string name="logo_app" translatable="false">Logo PsychIT</string>
 
     <!-- Login -->
     <string name="login">Masuk</string>
@@ -79,7 +79,7 @@
     <string name="icon_send_message">Ikon Kirim Pesan</string>
     <string name="white_container">Wadah Putihr</string>
     <string name="hint_message">Ketik pesan anda</string>
-    <string name="chat_timeout">Error: Psychika sedang sibuk</string>
+    <string name="chat_timeout">Error: PsychIT sedang sibuk</string>
 
     <!-- Article -->
     <string name="article">Artikel</string>
