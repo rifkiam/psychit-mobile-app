@@ -15,7 +15,7 @@ class ChatAdapter(private var chatMessages: MutableList<ChatMessage>) : Recycler
         fun bind (chatMessage: ChatMessage) {
             binding.apply {
                 tvMessage.text = chatMessage.content
-                tvTime.text = chatMessage.time
+                tvTime.text = ""
             }
         }
     }
@@ -24,7 +24,7 @@ class ChatAdapter(private var chatMessages: MutableList<ChatMessage>) : Recycler
         fun bind (chatMessage: ChatMessage) {
             binding.apply {
                 tvMessage.text = chatMessage.content
-                tvTime.text = chatMessage.time
+                tvTime.text = ""
             }
         }
     }
@@ -33,7 +33,7 @@ class ChatAdapter(private var chatMessages: MutableList<ChatMessage>) : Recycler
         fun bind (chatMessage: ChatMessage) {
             binding.apply {
                 tvMessage.text = chatMessage.content
-                tvTime.text = chatMessage.time
+                tvTime.text = ""
             }
         }
     }

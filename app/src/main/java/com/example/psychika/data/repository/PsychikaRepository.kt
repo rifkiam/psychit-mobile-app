@@ -18,6 +18,7 @@ import com.example.psychika.data.network.response.TokenResponse
 import com.example.psychika.data.network.response.ErrorsItem
 import com.example.psychika.data.network.response.NearbyPlacesResponse
 import com.example.psychika.data.network.response.PredictResponse
+import com.example.psychika.data.network.response.StartSessionResponse
 import com.example.psychika.data.network.response.SuccessResponse
 import com.example.psychika.data.network.response.UnprocessableEntityResponse
 import com.example.psychika.data.network.response.UserResponse
@@ -196,14 +197,32 @@ class PsychikaRepository(
             }
         }
 
-    fun sendChat(token: String, message: List<ChatMessage>): LiveData<Result<ChatbotResponse, ErrorResponse>> =
+    fun startNewSession(token: String, model: String, stream: Boolean): LiveData<Result<StartSessionResponse, ErrorResponse>> =
         liveData {
             emit(Result.Loading)
 
             try {
-                val request = ChatbotRequest("psychika1", message, false)
+                val response = psychikaApiService.startSession(token, model, stream)
+                Log.d(TAG, "StartSession Response: $response")
+                emit(Result.Success(response))
+            } catch (e: HttpException) {
+                val errorBody = e.response()?.errorBody()?.string()
+                val errorResponse = Gson().fromJson(errorBody, ErrorResponse::class.java)
+                val errorMessage = errorResponse.message
+                Log.e(TAG, "Error Start Session Repo level: $errorMessage")
+                emit(Result.Error(ErrorResponse(errorMessage)))
+            }
+        }
+
+    fun sendChat(token: String, message: ChatMessage, sessionId: String): LiveData<Result<ChatbotResponse, ErrorResponse>> =
+        liveData {
+            emit(Result.Loading)
+
+            try {
+                val request = ChatbotRequest("psychIT", message, sessionId, true)
                 Log.d(TAG, "Send Chat : $request")
                 val response = psychikaApiService.sendChat(token, request)
+                Log.d(TAG, "Res log: $response");
                 emit(Result.Success(response))
             } catch (e: SocketTimeoutException) {
                 Log.e(TAG, "Timeout Error Send Chat : ${e.message}", )
@@ -212,7 +231,7 @@ class PsychikaRepository(
                 val errorBody = e.response()?.errorBody()?.string()
                 val errorResponse = Gson().fromJson(errorBody, ErrorResponse::class.java)
                 val errorMessage = errorResponse.message
-                Log.e(TAG, "Error Send Chat : $errorMessage")
+                Log.e(TAG, "Error Send Chat Repo level: $errorMessage")
                 emit(Result.Error(ErrorResponse(errorMessage)))
             }
         }

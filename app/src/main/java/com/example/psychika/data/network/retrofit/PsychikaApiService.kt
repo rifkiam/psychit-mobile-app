@@ -2,6 +2,7 @@ package com.example.psychika.data.network.retrofit
 
 import com.example.psychika.data.entity.ChatbotRequest
 import com.example.psychika.data.network.response.ChatbotResponse
+import com.example.psychika.data.network.response.StartSessionResponse
 import com.example.psychika.data.network.response.SuccessResponse
 import com.example.psychika.data.network.response.TokenResponse
 import com.example.psychika.data.network.response.UserResponse
@@ -51,6 +52,14 @@ interface PsychikaApiService {
         @Field("current") currPass: String,
         @Field("password") newPass: String
     ): SuccessResponse
+
+    @FormUrlEncoded
+    @POST("chat/start")
+    suspend fun startSession(
+        @Header("Authorization") token: String,
+        @Field("model") model: String,
+        @Field("stream") stream: Boolean,
+    ): StartSessionResponse
 
     @POST("chat")
     suspend fun sendChat(

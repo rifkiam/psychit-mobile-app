@@ -1,5 +1,6 @@
 package com.example.psychika.ui.chat
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -32,8 +33,10 @@ class ChatFragment : Fragment() {
     private lateinit var userModel: User
     private lateinit var userPreference: UserPreference
     private lateinit var userId: String
-    
+    private var sessionId: String? = null
+
     private lateinit var allMessages: List<ChatMessage>
+    private var isSessionInitialized = false
 
     private val handler = Handler(Looper.getMainLooper())
 
@@ -49,9 +52,56 @@ class ChatFragment : Fragment() {
 
         showChat()
 
+//        val sessionIdMem = getSessionId()
+//        Log.d(TAG, "SessionID onCreateView: $sessionIdMem")
+//
+//        if (!isSessionInitialized || sessionIdMem == null) {
+//            Log.d(TAG, "Masuk initiateSession onCreateView: $isSessionInitialized $sessionIdMem")
+//            initiateSession()
+//            isSessionInitialized = true
+//        }
+        Log.d(TAG, "SessionID onCreateView: $sessionId $isSessionInitialized")
+
         binding.ivSendMessage.setOnClickListener { sendMessage() }
 
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        sessionId = getSessionId()
+        Log.d(TAG, "SessionID onResume: $sessionId $isSessionInitialized")
+
+        if (sessionId == null) {
+            Log.d(TAG, "Masuk initiateSession onResume: $isSessionInitialized $sessionId")
+            initiateSession()
+            isSessionInitialized = true
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        clearSessionId()
+        Log.d(TAG, "SessionID onDestroy: ${getSessionId()} $sessionId")
+    }
+
+    private fun initiateSession() {
+        viewModel.startNewSession("Bearer $userId", "psychIT", true).observe(viewLifecycleOwner) { result ->
+            when (result) {
+                is Result.Loading -> {}
+                is Result.Success -> {
+                    // Session response is saved in ViewModel; use it later as needed
+                    Log.d(TAG, "Session initialized: ${result.data}")
+                    sessionId = result.data.sessionId
+                    saveSessionId(sessionId!!)
+                }
+                is Result.Error -> {
+                    // Handle errors if the request fails
+                    Log.d(TAG, "Session creation err: ${result.error}")
+                    showToast(result.error.message)
+                }
+            }
+        }
     }
 
     private fun showChat() {
@@ -72,7 +122,7 @@ class ChatFragment : Fragment() {
                     val defaultBotMessage = ChatMessage(
                         "assistant",
                         getString(R.string.greeting_message),
-                        Utils.getCurrentTime()
+//                        Utils.getCurrentTime()
                     )
                     chatAdapter.addChatMessage(defaultBotMessage)
                     viewModel.saveToLocalDb(listOf(defaultBotMessage), userId, 0.0)
@@ -112,7 +162,11 @@ class ChatFragment : Fragment() {
     private fun sendMessage() {
         val userInput = binding.etUserInputMessage.text.toString()
         if (userInput.isNotEmpty()) {
-            val userMessage = ChatMessage("user", userInput, Utils.getCurrentTime())
+            val userMessage = ChatMessage(
+                "user",
+                userInput,
+//                Utils.getCurrentTime()
+            )
 
             getPredict(userInput, userMessage)
 
@@ -122,13 +176,18 @@ class ChatFragment : Fragment() {
 
             Log.d(TAG, "All messages : $messagesToSend")
 
-            viewModel.sendChat("Bearer $userId", messagesToSend).observe(requireActivity()) { result ->
+            if (getSessionId() == null) {
+                initiateSession();
+                Log.d(TAG, "Session Created?: ${getSessionId()}")
+            }
+
+            viewModel.sendChat("Bearer $userId", ChatMessage("user", userInput), sessionId!!).observe(requireActivity()) { result ->
                 Log.d(TAG, "userInput: $userInput")
                 if (result != null) {
                     when (result) {
                         is Result.Loading -> {
                             handler.postDelayed({
-                                val loadingMessage = ChatMessage("loading", "", "")
+                                val loadingMessage = ChatMessage("loading", "")
                                 chatAdapter.addChatMessage(loadingMessage)
                                 viewModel.saveToLocalDb(listOf(loadingMessage), userId, 0.0)
                             }, 1500)
@@ -150,7 +209,7 @@ class ChatFragment : Fragment() {
                             val assistantMessage = ChatMessage(
                                 "assistant",
                                 responseMessage,
-                                Utils.getCurrentTime()
+//                                Utils.getCurrentTime()
                             )
                             chatAdapter.addChatMessage(assistantMessage)
                             viewModel.saveToLocalDb(listOf(assistantMessage), userId, 0.0)
@@ -160,11 +219,11 @@ class ChatFragment : Fragment() {
                             chatAdapter.removeLoadingMessage()
                             viewModel.deleteChatRoleLoading()
 
-                            Log.e(TAG, "Error Send Chat : ${result.error.message}")
+                            Log.e(TAG, "Error Send Chat Fragment level: ${result.error.message}")
                             val errorTimeoutMessage = ChatMessage(
                                 "error",
                                 getString(R.string.chat_timeout),
-                                Utils.getCurrentTime()
+//                                Utils.getCurrentTime()
                             )
                             chatAdapter.addChatMessage(errorTimeoutMessage)
                             viewModel.saveToLocalDb(listOf(errorTimeoutMessage), userId, 0.0)
@@ -180,6 +239,21 @@ class ChatFragment : Fragment() {
 
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun saveSessionId(sessionId: String) {
+        val sharedPref = requireContext().getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+        sharedPref.edit().putString("session_id", sessionId).apply()
+    }
+
+    private fun getSessionId(): String? {
+        val sharedPref = requireContext().getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+        return sharedPref.getString("session_id", null)
+    }
+
+    private fun clearSessionId() {
+        val sharedPref = requireContext().getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+        sharedPref.edit().remove("session_id").apply()
     }
 
     companion object {
