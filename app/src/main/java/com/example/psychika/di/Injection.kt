@@ -1,6 +1,8 @@
 package com.example.psychika.di
 
 import android.content.Context
+import android.content.SharedPreferences
+import android.preference.PreferenceManager
 import com.example.psychika.data.local.room.ChatMessageDatabase
 import com.example.psychika.data.repository.PsychikaRepository
 import com.example.psychika.data.network.retrofit.ApiConfig
@@ -13,6 +15,7 @@ object Injection {
         val mapsNearbyApiService = ApiConfig.getMapsNearbyApiService()
         val firebaseAuth = FirebaseAuth.getInstance()
         val chatMessageDao = ChatMessageDatabase.getDatabase(context).chatMessageDao()
-        return PsychikaRepository(authApiService, classificationApiService, mapsNearbyApiService, firebaseAuth, chatMessageDao)
+        val sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+        return PsychikaRepository(authApiService, classificationApiService, mapsNearbyApiService, firebaseAuth, chatMessageDao, sharedPreferences)
     }
 }

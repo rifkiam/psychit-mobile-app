@@ -45,7 +45,7 @@ android {
 //        buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"https://psychika.sleepingowl.my.id/\"")
         buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"http://127.0.0.1:5000/\"")
         buildConfigField("String", "BASE_URL_MAPS_NEARBY", "\"https://maps.googleapis.com/maps/api/place/nearbysearch/\"")
-        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyAOCg8iX7rn1J7vUTGLpVPKXLgspeXBKH0\"")
+        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyBxjmByK_Sp-qsu9nf6QEXljauu3sgsdmg\"")
     }
 }
 
@@ -115,4 +115,7 @@ dependencies {
 
     // Dots Progress Bar
     implementation(libs.android.loading.dots)
+
+    // JWT Decode
+    implementation(libs.jwtdecode)
 }

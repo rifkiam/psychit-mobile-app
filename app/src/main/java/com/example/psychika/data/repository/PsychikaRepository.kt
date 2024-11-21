@@ -1,7 +1,9 @@
 package com.example.psychika.data.repository
 
+import android.content.SharedPreferences
 import android.util.Log
 import androidx.lifecycle.*
+import com.auth0.android.jwt.JWT
 import com.example.psychika.BuildConfig
 import com.example.psychika.data.entity.ChatMessage
 import com.example.psychika.data.entity.ChatbotRequest
@@ -43,7 +45,8 @@ class PsychikaRepository(
     private val classificationApiService: ClassificationApiService,
     private val mapsNearbyPlacesService: NearbyPlacesService,
     private val firebaseAuth: FirebaseAuth,
-    private val chatMessageDao: ChatMessageDao
+    private val chatMessageDao: ChatMessageDao,
+    private val sharedPreferences: SharedPreferences
 ) {
     private val db = Firebase.database
     private val userRef = db.reference.child("users")
@@ -94,6 +97,15 @@ class PsychikaRepository(
 
             try {
                 val response = psychikaApiService.login(email, password)
+
+                val isKeyRemoved = sharedPreferences?.edit()?.remove("session_id")?.commit()
+
+                if (isKeyRemoved == true) {
+                    Log.d(TAG, "Key successfully removed from SharedPreferences.")
+                } else {
+                    Log.e(TAG, "Failed to remove key from SharedPreferences.")
+                }
+
                 emit(Result.Success(response))
             } catch (e: HttpException) {
                 val errorBody = e.response()?.errorBody()?.string()
@@ -116,6 +128,14 @@ class PsychikaRepository(
                 firebaseAuth.signInWithCredential(credential).await()
                 val currentUser = firebaseAuth.currentUser
                 if (currentUser != null) {
+                    val isKeyRemoved = sharedPreferences?.edit()?.remove("session_id")?.commit()
+
+                    if (isKeyRemoved == true) {
+                        Log.d(TAG, "Key successfully removed from SharedPreferences.")
+                    } else {
+                        Log.e(TAG, "Failed to remove key from SharedPreferences.")
+                    }
+
                     val idToken = currentUser.uid
                     val profilePic = currentUser.photoUrl.toString()
                     val name = currentUser.displayName ?: ""
@@ -243,7 +263,17 @@ class PsychikaRepository(
     }
 
     fun getAllMessagesByDate(date: String, userId: String): LiveData<List<ChatMessageEntity>> {
-        return chatMessageDao.getAllMessagesByDate(date, userId)
+        val jwt = JWT(userId)
+        val extractedId = jwt.getClaim("id").asString()
+
+        if (extractedId.isNullOrEmpty()) {
+            Log.e(TAG, "Failed to decode JWT or 'id' claim is missing")
+            return MutableLiveData(emptyList())
+        }
+
+        Log.d(TAG, "Decoded userId: $extractedId")
+
+        return chatMessageDao.getAllMessagesByDate(date, extractedId)
     }
 
     fun deleteChatRoleLoading() {
@@ -253,7 +283,17 @@ class PsychikaRepository(
     }
 
     fun getAllDateMessages(userId: String): LiveData<List<DailyAveragePrediction>> {
-        return chatMessageDao.getAllDateMessages(userId)
+        val jwt = JWT(userId)
+        val extractedId = jwt.getClaim("id").asString()
+
+        if (extractedId.isNullOrEmpty()) {
+            Log.e(TAG, "Failed to decode JWT or 'id' claim is missing")
+            return MutableLiveData(emptyList())
+        }
+
+        Log.d(TAG, "Decoded userId: $extractedId")
+
+        return chatMessageDao.getAllDateMessages(extractedId)
     }
 
     fun getPredict(text: String): LiveData<Result<PredictResponse, ErrorResponse>> =

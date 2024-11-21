@@ -38,6 +38,7 @@ places = "2.6.0"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 
 [libraries]
+jwtdecode = "com.auth0.android:jwtdecode:2.0.1"
 android-loading-dots = { module = "com.github.razaghimahdi:Android-Loading-Dots", version.ref = "androidLoadingDots" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
