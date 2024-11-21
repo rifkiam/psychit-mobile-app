@@ -10,7 +10,7 @@ import com.example.psychika.databinding.ItemBotErrorBinding
 import com.example.psychika.databinding.ItemUserChatBinding
 import com.example.psychika.databinding.ItemChatLoadingBinding
 
-class ChatAdapter(private var chatMessages: MutableList<ChatMessage>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ChatAdapter(var chatMessages: MutableList<ChatMessage>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     inner class UserChatViewHolder(private val binding: ItemUserChatBinding) : RecyclerView.ViewHolder(binding.root)  {
         fun bind (chatMessage: ChatMessage) {
             binding.apply {

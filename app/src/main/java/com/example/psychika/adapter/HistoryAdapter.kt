@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.psychika.data.entity.DailyAveragePrediction
 import com.example.psychika.databinding.ItemRowHistoryBinding
 
-class HistoryAdapter : ListAdapter<DailyAveragePrediction, HistoryAdapter.ViewHolder>(DIFF_CALLBACK) {
+open class HistoryAdapter : ListAdapter<DailyAveragePrediction, HistoryAdapter.ViewHolder>(DIFF_CALLBACK) {
     private var originalList: List<DailyAveragePrediction> = listOf()
     private lateinit var onItemClickCallback: OnItemClickCallBack
 
@@ -16,7 +16,7 @@ class HistoryAdapter : ListAdapter<DailyAveragePrediction, HistoryAdapter.ViewHo
         this.onItemClickCallback = onItemClickCallBack
     }
 
-    inner class ViewHolder(private val binding: ItemRowHistoryBinding) : RecyclerView.ViewHolder(binding.root) {
+    open inner class ViewHolder( val binding: ItemRowHistoryBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(chatMessage: DailyAveragePrediction) {
             val percentage = chatMessage.averagePredict * 100
             val formattedPercentage = String.format("%.2f%%", percentage)

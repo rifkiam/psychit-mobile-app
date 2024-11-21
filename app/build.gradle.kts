@@ -45,7 +45,7 @@ android {
 //        buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"https://psychika.sleepingowl.my.id/\"")
         buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"http://127.0.0.1:5000/\"")
         buildConfigField("String", "BASE_URL_MAPS_NEARBY", "\"https://maps.googleapis.com/maps/api/place/nearbysearch/\"")
-        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyAOCg8iX7rn1J7vUTGLpVPKXLgspeXBKH0\"")
+        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyBxjmByK_Sp-qsu9nf6QEXljauu3sgsdmg\"")
     }
 }
 
@@ -56,7 +56,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.core.ktx)
+    implementation(libs.androidx.junit.ktx)
+
+    // Unit testing dependencies
+    testImplementation(libs.mockito.core) // Use version catalog for Mockito core
+    testImplementation(libs.mockito.kotlin) // Use version catalog for Kotlin-friendly Mockito
+    testImplementation(libs.mockk)
     testImplementation(libs.junit)
+    testImplementation(libs.test.robolectric)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 

@@ -36,8 +36,17 @@ playServicesLocation = "21.3.0"
 playServicesMaps = "18.2.0"
 places = "2.6.0"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
+mockito = "4.0.0"
+mockk = "1.13.4"
+coreKtxVersion = "1.6.1"
+junitKtx = "1.2.1"
+robolectric = "4.10"
 
 [libraries]
+test-robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 android-loading-dots = { module = "com.github.razaghimahdi:Android-Loading-Dots", version.ref = "androidLoadingDots" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
@@ -76,6 +85,8 @@ firebase-database = { group = "com.google.firebase", name = "firebase-database",
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 places = { module = "com.google.android.libraries.places:places", version.ref = "places" }
+core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

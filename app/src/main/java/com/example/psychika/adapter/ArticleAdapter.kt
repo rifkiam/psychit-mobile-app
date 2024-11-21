@@ -9,14 +9,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.psychika.R
 import com.example.psychika.data.entity.Article
 
-class ArticleAdapter(private var listArticle: ArrayList<Article>) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
+open class ArticleAdapter(var listArticle: ArrayList<Article>) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallBack
 
     fun setOnItemClickCallBack(onItemClickCallBack: OnItemClickCallBack) {
         this.onItemClickCallback = onItemClickCallBack
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    open class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvPublisher: TextView = itemView.findViewById(R.id.tv_publisher)
         val tvTitle: TextView = itemView.findViewById(R.id.tv_title)
         val tvDate: TextView = itemView.findViewById(R.id.tv_date)

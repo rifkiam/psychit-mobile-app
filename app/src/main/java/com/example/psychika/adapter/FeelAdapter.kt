@@ -11,7 +11,7 @@ import com.example.psychika.R
 import com.example.psychika.data.entity.Feel
 import com.example.psychika.data.local.preference.feel.FeelPreference
 
-class FeelAdapter(private val listFeel: ArrayList<Feel>, private val feelPreference: FeelPreference) : RecyclerView.Adapter<FeelAdapter.ViewHolder>() {
+class FeelAdapter(val listFeel: ArrayList<Feel>, private val feelPreference: FeelPreference) : RecyclerView.Adapter<FeelAdapter.ViewHolder>() {
     private var selectedItemPosition: Int = RecyclerView.NO_POSITION
     private var initialSelected: Boolean = feelPreference.isInitialSelected()
 
