@@ -55,24 +55,6 @@ class HistoryAdapterTest {
         assertThat(historyAdapter.currentList[1].averagePredict, `is`(21.0))
     }
 
-//    @Test
-//    fun testOnBindViewHolder_setOnItemClickCallback() {
-//        val context = ApplicationProvider.getApplicationContext<Context>()
-//        val inflater = LayoutInflater.from(context)
-//        val binding = ItemRowHistoryBinding.inflate(inflater)
-//
-//        val viewHolder = historyAdapter.ViewHolder(binding)
-//
-//        val position = 0
-//        historyAdapter.onBindViewHolder(viewHolder, position)
-//
-//        viewHolder.itemView.performClick()
-//
-//        assertThat(itemClickCalled, `is`(true))
-//        assertThat(clickedItem.date, `is`("2024-11-01"))
-//        assertThat(clickedItem.averagePredict, `is`(23.5))
-//    }
-
     @Test
     fun testOnBindViewHolder() {
         val context = ApplicationProvider.getApplicationContext<Context>()
@@ -143,4 +125,23 @@ class HistoryAdapterTest {
         assertThat(historyAdapter.currentList.size, `is`(0))
     }
 
+
+
+    //    @Test
+//    fun testOnBindViewHolder_setOnItemClickCallback() {
+//        val context = ApplicationProvider.getApplicationContext<Context>()
+//        val inflater = LayoutInflater.from(context)
+//        val binding = ItemRowHistoryBinding.inflate(inflater)
+//
+//        val viewHolder = historyAdapter.ViewHolder(binding)
+//
+//        val position = 0
+//        historyAdapter.onBindViewHolder(viewHolder, position)
+//
+//        viewHolder.itemView.performClick()
+//
+//        assertThat(itemClickCalled, `is`(true))
+//        assertThat(clickedItem.date, `is`("2024-11-01"))
+//        assertThat(clickedItem.averagePredict, `is`(23.5))
+//    }
 }

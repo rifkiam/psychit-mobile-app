@@ -41,8 +41,16 @@ mockk = "1.13.4"
 coreKtxVersion = "1.6.1"
 junitKtx = "1.2.1"
 robolectric = "4.10"
+kotlinx-coroutines = "1.7.3"
+kotlinx-coroutines-test = "1.7.3"
+androidx-core-testing = "2.2.0"
+mockwebserver = "4.9.1"
 
 [libraries]
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "mockwebserver" }
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "androidx-core-testing" }
 test-robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockito" }

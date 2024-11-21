@@ -63,8 +63,12 @@ dependencies {
     testImplementation(libs.mockito.core) // Use version catalog for Mockito core
     testImplementation(libs.mockito.kotlin) // Use version catalog for Kotlin-friendly Mockito
     testImplementation(libs.mockk)
-    testImplementation(libs.junit)
+    testImplementation(libs.androidx.core.testing)
+    androidTestImplementation(libs.junit)
     testImplementation(libs.test.robolectric)
+    androidTestImplementation(libs.mockwebserver)
+    androidTestImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.androidx.core.testing)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
