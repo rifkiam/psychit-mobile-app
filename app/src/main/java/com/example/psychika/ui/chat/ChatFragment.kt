@@ -62,11 +62,11 @@ class ChatFragment : Fragment() {
 //        }
         Log.d(TAG, "SessionID onCreateView: $sessionId $isSessionInitialized")
 
-        // Observe the average predictions
         viewModel.getAllDateMessages(userId).observe(viewLifecycleOwner) { dailyAveragePredictions ->
-            // Handle the result here
-            Log.d("DailyPrediction", "Daily Average Predictions: $dailyAveragePredictions")
-            // You can update your UI or store the data as needed
+            // Extract the averagePredict values
+            val averagePredictPercentages = dailyAveragePredictions.map { String.format("%.2f", it.averagePredict * 100) }
+            Log.d("DailyPrediction", "Formatted Percentages: $averagePredictPercentages")
+            // Log or use the extracted values
         }
 
         binding.ivSendMessage.setOnClickListener { sendMessage() }
