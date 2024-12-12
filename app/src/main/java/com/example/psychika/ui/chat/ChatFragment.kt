@@ -62,6 +62,13 @@ class ChatFragment : Fragment() {
 //        }
         Log.d(TAG, "SessionID onCreateView: $sessionId $isSessionInitialized")
 
+        // Observe the average predictions
+        viewModel.getAllDateMessages(userId).observe(viewLifecycleOwner) { dailyAveragePredictions ->
+            // Handle the result here
+            Log.d(TAG, "Daily Average Predictions: $dailyAveragePredictions")
+            // You can update your UI or store the data as needed
+        }
+
         binding.ivSendMessage.setOnClickListener { sendMessage() }
 
         return binding.root

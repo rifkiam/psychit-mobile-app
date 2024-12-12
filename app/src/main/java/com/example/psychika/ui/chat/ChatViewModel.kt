@@ -22,6 +22,9 @@ class ChatViewModel(private val repository: PsychikaRepository) : ViewModel() {
             }
         }
 
+    fun getAllDateMessages(userId: String) =
+        repository.getAllDateMessages(userId)
+
     fun sendChat(token: String, messages: ChatMessage, sessionId: String) =
         repository.sendChat(token, messages, sessionId)
 
