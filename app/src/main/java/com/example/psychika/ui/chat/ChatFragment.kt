@@ -63,10 +63,17 @@ class ChatFragment : Fragment() {
         Log.d(TAG, "SessionID onCreateView: $sessionId $isSessionInitialized")
 
         viewModel.getAllDateMessages(userId).observe(viewLifecycleOwner) { dailyAveragePredictions ->
-            // Extract the averagePredict values
-            val averagePredictPercentages = dailyAveragePredictions.map { String.format("%.2f", it.averagePredict * 100) }
-            Log.d("DailyPrediction", "Formatted Percentages: $averagePredictPercentages")
-            // Log or use the extracted values
+            // Extract and convert averagePredict values to percentages
+            val averagePredictPercentages = dailyAveragePredictions.map { it.averagePredict * 100 }
+
+            // Assuming you want to display the first percentage in the list
+            if (averagePredictPercentages.isNotEmpty()) {
+                val formattedPercentage = String.format("%.2f%%", averagePredictPercentages[0])
+                binding.tvPredict2.text = formattedPercentage
+            } else {
+                // Handle empty list scenario
+                binding.tvPredict2.text = ""
+            }
         }
 
         binding.ivSendMessage.setOnClickListener { sendMessage() }
