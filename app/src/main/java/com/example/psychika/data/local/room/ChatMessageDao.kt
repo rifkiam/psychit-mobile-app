@@ -15,7 +15,7 @@ interface ChatMessageDao {
     @Query("DELETE FROM chat_messages WHERE role = 'loading'")
     suspend fun deleteChatRoleLoading()
 
-    @Query("SELECT date, AVG(predict) AS averagePredict FROM chat_messages WHERE userId = :userId GROUP BY date ORDER BY date DESC")
+    @Query("SELECT date, AVG(predict) AS averagePredict FROM chat_messages WHERE role = 'user' AND userId = :userId GROUP BY date ORDER BY date DESC")
     fun getAllDateMessages(userId: String): LiveData<List<DailyAveragePrediction>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

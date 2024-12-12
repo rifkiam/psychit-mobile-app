@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
@@ -50,7 +51,7 @@ class HistoryActivity : AppCompatActivity() {
             dialogDate = savedInstanceState.getString("dialogDate")
             avgPredict = savedInstanceState.getDouble("avgPredict")
         }
-
+        Log.d("HistoryActivity", "onCreate: " + avgPredict.toString())
         setupRecyclerView()
         setDataChatHistoryDate()
 
@@ -76,6 +77,7 @@ class HistoryActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         outState.putBoolean("isDialogShowing", isDialogShowing)
         outState.putString("dialogDate", dialogDate)
+        Log.d("HistoryActivity", "onSaveInstanceState: " + outState.getString("avgPredict").toString())
         avgPredict?.let { outState.putDouble("avgPredict", it) }
     }
 
@@ -94,6 +96,7 @@ class HistoryActivity : AppCompatActivity() {
 
         historyAdapter.setOnItemClickCallBack(object : HistoryAdapter.OnItemClickCallBack {
             override fun onItemClicked(data: DailyAveragePrediction) {
+                Log.d("HistoryActivity", "setupRecyclerView: " + data.averagePredict.toString())
                 showPopUp(data.date, data.averagePredict)
             }
         })
@@ -106,10 +109,11 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun showPopUp(date: String, predict: Double) {
+        Log.d("HistoryActivityShowPopup", "showPopUp " + predict.toString())
         val popUpBinding = PopUpHistoryBinding.inflate(layoutInflater)
 
         popUpBinding.tvAdvice.text =
-            if (predict < 60.0) {
+            if (predict < 0.6) {
                 getString(R.string.low_mental_health)
             } else {
                 getString(R.string.high_mental_health)

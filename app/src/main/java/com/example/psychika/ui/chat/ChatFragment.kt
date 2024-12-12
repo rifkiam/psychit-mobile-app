@@ -144,7 +144,7 @@ class ChatFragment : Fragment() {
                 is Result.Success -> {
                     val response = result.data.prediction
                     val cleanPredictionString = response.replace("\"", "")
-                    val prediction = cleanPredictionString.toDouble()
+                    val prediction = 1 - cleanPredictionString.toDouble()
                     viewModel.saveToLocalDb(listOf(userMessage), userId, prediction)
                     Log.d(TAG, "Prediction : $prediction")
 
