@@ -76,7 +76,6 @@ class LoginActivity : AppCompatActivity() {
                 cbRemember.isChecked = !cbRemember.isChecked
             }
             btnLogin.setOnClickListener { login() }
-            btnGoogle.setOnClickListener { loginWithGoogle() }
         }
     }
 
