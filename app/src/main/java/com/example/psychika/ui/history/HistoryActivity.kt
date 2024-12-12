@@ -109,7 +109,7 @@ class HistoryActivity : AppCompatActivity() {
         val popUpBinding = PopUpHistoryBinding.inflate(layoutInflater)
 
         popUpBinding.tvAdvice.text =
-            if (predict < 80.0) {
+            if (predict < 60.0) {
                 getString(R.string.low_mental_health)
             } else {
                 getString(R.string.high_mental_health)

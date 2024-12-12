@@ -41,11 +41,11 @@ android {
         buildConfig = true
     }
     defaultConfig {
-        buildConfigField("String", "BASE_URL_PSYCHIT", "\"http://192.168.0.133:3000/\"")
+        buildConfigField("String", "BASE_URL_PSYCHIT", "\"http://10.15.41.122:3000/\"")
 //        buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"https://psychika.sleepingowl.my.id/\"")
-        buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"http://127.0.0.1:5000/\"")
+        buildConfigField("String", "BASE_URL_CLASSIFICATION", "\"http://10.15.41.122:5000/\"")
         buildConfigField("String", "BASE_URL_MAPS_NEARBY", "\"https://maps.googleapis.com/maps/api/place/nearbysearch/\"")
-        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyBxjmByK_Sp-qsu9nf6QEXljauu3sgsdmg\"")
+        buildConfigField("String", "HOSPITAL_API_KEY", "\"AIzaSyBxM9vxBC_QVG_5D-UbFX6ycaltsmJRGqo\"")
     }
 }
 
