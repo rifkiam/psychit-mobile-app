@@ -55,7 +55,7 @@
             android:layout_height="18sp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
-            android:textColor="@color/error_500"
+            android:textColor="@color/shades_50"
             android:textSize="14sp"
             tools:text="75%" />
 
