@@ -55,8 +55,8 @@ class HomeFragment : Fragment() {
             getCurrentUserGoogleAuth()
         }
 
-        listFeel.addAll(getListFeel())
-        showListFeel()
+//        listFeel.addAll(getListFeel())
+//        showListFeel()
 
         listArticle.addAll(getListArticle())
         showListArticle()
@@ -166,16 +166,16 @@ class HomeFragment : Fragment() {
         viewModel.registerWithGogleAuth(userGoogleAuth.id!!, user).observe(requireActivity()) {}
     }
 
-    private fun showListFeel() {
-        val layoutManager = GridLayoutManager(requireContext(), listFeel.size)
-        val listFeelAdapter = FeelAdapter(listFeel, feelPreference)
-
-        binding.rvListFeel.apply {
-            setLayoutManager(layoutManager)
-            isNestedScrollingEnabled = false
-            adapter = listFeelAdapter
-        }
-    }
+//    private fun showListFeel() {
+//        val layoutManager = GridLayoutManager(requireContext(), listFeel.size)
+//        val listFeelAdapter = FeelAdapter(listFeel, feelPreference)
+//
+//        binding.rvListFeel.apply {
+//            setLayoutManager(layoutManager)
+//            isNestedScrollingEnabled = false
+//            adapter = listFeelAdapter
+//        }
+//    }
 
     private fun getListFeel(): ArrayList<Feel> {
         val dataIcon = resources.obtainTypedArray(R.array.feel_icon)

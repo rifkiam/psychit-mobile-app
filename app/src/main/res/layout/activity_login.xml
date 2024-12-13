@@ -105,114 +105,70 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@+id/tv_login"
-            app:layout_constraintTop_toBottomOf="@+id/et_login_password">
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tv_login"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_password">
 
-            <CheckBox
-                android:id="@+id/cb_remember"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                app:buttonTint="@color/primary_400" />
-
-            <TextView
-                android:id="@+id/tv_remember"
-                style="@style/TextAppearance.AppCompat.TextXxs.Regular"
-                android:layout_width="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="@string/remember_me" />
-        </LinearLayout>
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:buttonTint="@color/primary_400" />
 
         <TextView
-            android:id="@+id/tv_forgot_pass"
+            android:id="@+id/tv_remember"
             style="@style/TextAppearance.AppCompat.TextXxs.Regular"
             android:layout_width="wrap_content"
-            android:text="@string/forgot_pass"
-            android:textColor="@color/primary_900"
-            app:layout_constraintBottom_toBottomOf="@+id/layout_remember"
-            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
-            app:layout_constraintTop_toTopOf="@+id/layout_remember" />
+            android:layout_marginStart="8dp"
+            android:text="@string/remember_me" />
+    </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/custom_button"
-            android:text="@string/login"
-            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
-            app:layout_constraintStart_toStartOf="@+id/et_login_email"
-            app:layout_constraintTop_toBottomOf="@+id/layout_remember" />
+    <TextView
+        android:id="@+id/tv_forgot_pass"
+        style="@style/TextAppearance.AppCompat.TextXxs.Regular"
+        android:layout_width="wrap_content"
+        android:text="@string/forgot_pass"
+        android:textColor="@color/primary_900"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_remember"
+        app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+        app:layout_constraintTop_toTopOf="@+id/layout_remember" />
 
-        <ImageView
-            android:id="@+id/divider_1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/divider"
-            android:src="@drawable/divider"
-            app:layout_constraintBottom_toBottomOf="@id/tv_or"
-            app:layout_constraintEnd_toStartOf="@id/tv_or"
-            app:layout_constraintStart_toStartOf="@+id/et_login_email"
-            app:layout_constraintTop_toTopOf="@id/tv_or" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+        app:layout_constraintStart_toStartOf="@+id/et_login_email"
+        app:layout_constraintTop_toBottomOf="@+id/layout_remember" />
 
-        <TextView
-            android:id="@+id/tv_or"
-            style="@style/TextAppearance.AppCompat.TextXs.Medium"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/or"
-            android:textColor="@color/neutral_400"
-            android:paddingHorizontal="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+    <TextView
+        android:id="@+id/tv_dont_have_acc"
+        style="@style/TextAppearance.AppCompat.TextXs.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/dont_have_acc"
+        android:textColor="@color/neutral_900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_signup"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
-        <ImageView
-            android:id="@+id/divider_2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/divider"
-            android:src="@drawable/divider"
-            app:layout_constraintBottom_toBottomOf="@id/tv_or"
-            app:layout_constraintEnd_toEndOf="@+id/et_login_email"
-            app:layout_constraintStart_toEndOf="@id/tv_or"
-            app:layout_constraintTop_toTopOf="@id/tv_or" />
-
-        <com.example.psychika.ui.custom.GoogleButton
-            android:id="@+id/btn_google"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/login_google"
-            app:layout_constraintEnd_toEndOf="@+id/btn_login"
-            app:layout_constraintStart_toStartOf="@+id/btn_login"
-            app:layout_constraintTop_toBottomOf="@id/tv_or" />
-
-        <TextView
-            android:id="@+id/tv_dont_have_acc"
-            style="@style/TextAppearance.AppCompat.TextXs.Regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/dont_have_acc"
-            android:textColor="@color/neutral_900"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/tv_signup"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_google" />
-
-        <TextView
-            android:id="@+id/tv_signup"
-            style="@style/TextAppearance.AppCompat.TextXs.Regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_up"
-            android:textColor="@color/primary_900"
-            android:layout_marginStart="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_dont_have_acc"
-            app:layout_constraintTop_toTopOf="@+id/tv_dont_have_acc" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+    <TextView
+        android:id="@+id/tv_signup"
+        style="@style/TextAppearance.AppCompat.TextXs.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/primary_900"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_dont_have_acc"
+        app:layout_constraintTop_toTopOf="@+id/tv_dont_have_acc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

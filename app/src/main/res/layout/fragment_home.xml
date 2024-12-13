@@ -62,23 +62,6 @@
             app:layout_constraintTop_toBottomOf="@id/top_bar_layout">
 
             <TextView
-                android:id="@+id/tv_question_feel"
-                style="@style/TextAppearance.AppCompat.TextMd.Semibold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/question_feel" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_list_feel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                app:spanCount="4"
-                tools:listitem="@layout/item_row_feel" />
-
-            <TextView
                 android:id="@+id/tv_recent_article"
                 style="@style/TextAppearance.AppCompat.TextMd.Semibold"
                 android:layout_width="wrap_content"

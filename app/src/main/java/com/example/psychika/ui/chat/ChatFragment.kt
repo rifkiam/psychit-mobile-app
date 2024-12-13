@@ -62,6 +62,17 @@ class ChatFragment : Fragment() {
 //        }
         Log.d(TAG, "SessionID onCreateView: $sessionId $isSessionInitialized")
 
+        viewModel.getAllDateMessages(userId).observe(viewLifecycleOwner) { dailyAveragePredictions ->
+            val averagePredictPercentages = dailyAveragePredictions.map { it.averagePredict * 100 }
+
+            if (averagePredictPercentages.isNotEmpty()) {
+                val formattedPercentage = String.format("%.2f%%", averagePredictPercentages[0])
+                binding.tvPredict2.text = formattedPercentage
+            } else {
+                binding.tvPredict2.text = ""
+            }
+        }
+
         binding.ivSendMessage.setOnClickListener { sendMessage() }
 
         return binding.root
